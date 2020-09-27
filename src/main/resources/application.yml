@@ -1,0 +1,23 @@
+server:
+#  port: 8080
+  servlet:
+    context-path: /sell
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.20.62.98:3306/wechat?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC&serverTimezone=GMT%2b8
+    username: root
+    password: 123456
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  jackson:
+    default-property-inclusion: non_null #不返回空的字段给前端  =  @JsonInclude(JsonInclude.Include.NON_NULL)
+wechat:
+  mpAppId: wxad12b5f879a210fe
+  mpAppSecret: 66512d44f3870297a41ba2c339dd696e
+  mchId:
+  mchKey:
+  KeyPath:
+  nodifyUrl:
